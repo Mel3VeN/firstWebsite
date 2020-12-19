@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../bilder/boat.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #71bbca;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #71bbca;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+  font-size: 2rem;
+}
+h3 {
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+  font-size: 2rem;
+}
+
+.nav {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul {
+  margin-top: 0px;
+  display: flex;
+}
+
+li {
+  float: left;
+  margin: 10px;
+  list-style-type: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.me {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  height: 25px;
+  width: 200px;
+  border: 2px solid #9cd4e1;
+  color: #71bbca;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #71bbca;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: white;
+  padding: 9px;
+}
+
+.write {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  height: 25px;
+  width: 200px;
+  border: 2px solid #9cd4e1;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #71bbca;
+  padding: 9px;
+}
+
+.write a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.contactform {
+  width: 500px;
+  height: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  background-color: #9cd4e1;
+  box-shadow: 3px 3px 3px 3px #0f5968;
+  color: #0f5968;
+  text-align: center;
+}
+
+.contactheader {
+  color: #0f5968;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.group {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 7px;
+  font-size: 1.2rem;
+  display: block;
+  padding: 3px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #0f5968;
+}
+textarea {
+  border-radius: 7px;
+  font-size: 1em;
+  display: block;
+  margin: 3px;
+  border: 2px solid #0f5968;
+}
+
+.contactinner {
+  width: 255px;
+  margin: auto;
+}
+
+.bottle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.formbutton {
+  text-decoration: none;
+  margin-top: 8px;
+  border: 2px solid #0f5968;
+  border-radius: 5px;
+  background-color: white;
+  color: #30676c;
+  width: 100px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skiplink {
+  position: absolute;
+  top: -40px;
+  z-index: 100;
+}
+.skiplink:focus {
+  top: 0;
+  z-index: 100;
+  background-color: red;
+}
+
+@media (max-width: 500px) {
+  .contactform {
+    width: 300px;
+    margin-top: 15%;
+  }
+
+  .greeting {
+    margin-top: 55%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .greeting {
+    margin-top: 35%;
+  }
+}

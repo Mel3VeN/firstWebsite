@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #71bbca;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.background {
+  background-image: url(../bilder/boat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+  max-width: 1980px;
+  height: 900px;
+}
+
+#author {
+  display: inline-block;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #71bbca;
+}
+
+.nav {
+  margin-top: 0;
+  padding-top: 0;
+  clear: both;
+}
+
+.navul {
+  margin-top: 0px;
+  display: flex;
+}
+
+.navlink {
+  margin: 10px;
+  list-style-type: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.steckbriefbox {
+  width: 700px;
+  height: 300px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.ich {
+  height: 170px;
+  width: 170px;
+}
+
+.steckbild {
+  display: inline-block;
+}
+
+.stecktext {
+  display: inline-block;
+  width: 350px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 1.4rem;
+}
+
+.steck {
+  line-height: 30px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 2rem;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.tauch {
+  width: 120px;
+  height: 28px;
+  display: block;
+  text-decoration: none;
+  background-color: #71bbca;
+  font-size: 0.65em;
+  border: 3px solid white;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -3%;
+  font-style: normal;
+}
+
+.tauch:hover {
+  background-color: white;
+  color: #71bbca;
+  font-style: normal;
+  border-radius: 50% 50% 50% 50%;
+  transition: 0.5s;
+}
+
+.interesse {
+  height: 500px;
+  width: 250px;
+  border: 3px solid white;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.interessenpic {
+  width: 144px;
+  height: 144px;
+  border: 3px solid white;
+  border-radius: 75px;
+  margin-top: -70px;
+}
+
+.interessenbox {
+  margin-top: 5%;
+  height: 500px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.interessentext {
+  text-align: left;
+  font-size: 1.05rem;
+  max-width: 220px;
+  line-height: 21px;
+  padding-left: 20px;
+  font-weight: 450;
+}
+
+.footercontainer {
+  margin-top: 10%;
+  height: 150px;
+  background-color: #0f5968;
+  text-align: center;
+}
+
+.jobdiv {
+  border-top: 3px solid #0f5968;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 5%;
+}
+
+.jobtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -10%;
+}
+
+.jobtext {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 7%;
+}
+
+.drkpic {
+  width: 140px;
+  height: 140px;
+  margin-top: -10%;
+  border: 3px solid #0f5968;
+  border-radius: 70px;
+}
+
+.contactlink {
+  display: inline-block;
+  padding-top: 4%;
+}
+
+.tabelle {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  font-size: 19px;
+}
+
+table {
+  margin: auto;
+  width: 700px;
+  border-collapse: collapse;
+  border-radius: 25px;
+  box-shadow: 0 0 0 3px white;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 5px;
+  padding-left: 15px;
+  border: 1px solid #9cd4e1;
+}
+tr th:first-child {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+tr th:last-child {
+  border-top: none;
+  border-right: none;
+}
+tr th:nth-child(2) {
+  border-top: none;
+}
+
+tr td {
+  border-bottom: none;
+  border-left: none;
+}
+tr td:last-child {
+  border-right: none;
+}
+
+.skiplink {
+  position: absolute;
+  top: -40px;
+  z-index: 100;
+}
+.skiplink:focus {
+  top: 0;
+  z-index: 100;
+  background-color: red;
+}
+
+@media (max-width: 500px) {
+  .quote {
+    width: 300px;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 2%;
+  }
+
+  .steckbriefbox {
+    width: 350px;
+  }
+
+  .Erfahrung {
+    margin-top: 40%;
+  }
+  .tauch {
+    margin-bottom: -7%;
+  }
+  .background {
+    background: none;
+    background-color: #71bbca;
+  }
+  .tabelle {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td,
+  th {
+    padding: 3px;
+  }
+  .jobdiv {
+    width: 350px;
+  }
+  .drkpic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .interessenbox {
+    width: 350px;
+    height: 0;
+    display: block;
+  }
+
+  .interesse {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .footercontainer {
+    display: none;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 777px) {
+  .interessenbox {
+    width: 740px;
+    display: block;
+    height: 2200px;
+  }
+  .interesse {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .quote {
+    margin-top: 35%;
+  }
+}
